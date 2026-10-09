@@ -50,7 +50,15 @@
 }
 
 .hudBottom {
-  @apply absolute bottom-0 inset-x-0 flex items-start justify-between p-3 gap-2;
+  @apply absolute bottom-0 inset-x-0 flex items-end justify-between p-3 gap-2;
+}
+
+.hudActions {
+  @apply flex items-center gap-2;
+}
+
+.zoomBtn {
+  @apply flex items-center gap-1.5 px-3 py-1.5 rounded border border-secondary bg-secondary/10 text-secondary font-semibold uppercase text-label-mono-sm hover:bg-secondary/20 transition-colors;
 }
 
 .birdName {

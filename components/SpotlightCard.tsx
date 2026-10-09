@@ -1,10 +1,11 @@
 'use client'
 
-import { memo, useCallback } from 'react'
-import { Star, GraphicEq, Straighten } from '@mui/icons-material'
+import { memo, useCallback, useState } from 'react'
+import { Star, GraphicEq, Straighten, Visibility } from '@mui/icons-material'
 import type { Bird } from '@/data/birds.types'
 import { getDominantGradient } from '@/lib/birdColors'
 import { useBirdImage } from '@/hooks/useBirdImage'
+import ImageModal from './ImageModal'
 import styles from './SpotlightCard.module.css'
 
 interface SpotlightCardProps {
@@ -17,10 +18,17 @@ const RARITY_STARS = ['', '⭐', '⭐⭐', '⭐⭐⭐', '⭐⭐⭐⭐', '⭐⭐�
 const WAVEFORM_HEIGHTS = [2, 4, 6, 3, 5, 7, 4, 2, 3, 5, 6, 4, 2, 5, 3, 1]
 
 export default memo(function SpotlightCard({ bird, onLog }: SpotlightCardProps) {
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false)
   const [gradFrom, gradTo] = getDominantGradient(bird.dominantColor)
   const { imageUrl } = useBirdImage(bird.scientificName, bird.photoUrl)
 
   const _handleLog = useCallback(() => onLog(bird), [onLog, bird])
+  const handleOpenImageModal = useCallback(() => {
+    if (imageUrl) {
+      setIsImageModalOpen(true)
+    }
+  }, [imageUrl])
+  const handleCloseImageModal = useCallback(() => setIsImageModalOpen(false), [])
 
   return (
     <section className={styles.section}>
@@ -52,8 +60,21 @@ export default memo(function SpotlightCard({ bird, onLog }: SpotlightCardProps) 
               <h2 className={styles.birdName}>{bird.commonName}</h2>
               <p className={styles.birdScientific}>{bird.scientificName}</p>
             </div>
-            <div className={styles.conservationBadge}>
-              <span className={styles.conservationText}>{bird.conservationStatus.toUpperCase()}</span>
+            <div className={styles.hudActions}>
+              {imageUrl && (
+                <button
+                  className={styles.zoomBtn}
+                  onClick={handleOpenImageModal}
+                  type="button"
+                  aria-label="Ver imagen con zoom"
+                >
+                  <Visibility sx={{ fontSize: 18 }} aria-hidden="true" />
+                  <span>ZOOM</span>
+                </button>
+              )}
+              <div className={styles.conservationBadge}>
+                <span className={styles.conservationText}>{bird.conservationStatus.toUpperCase()}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -103,6 +124,14 @@ export default memo(function SpotlightCard({ bird, onLog }: SpotlightCardProps) 
           </button> */}
         </div>
       </div>
+      {imageUrl && (
+        <ImageModal
+          isOpen={isImageModalOpen}
+          imageUrl={imageUrl}
+          birdName={bird.commonName}
+          onClose={handleCloseImageModal}
+        />
+      )}
     </section>
   )
 })
