@@ -1,0 +1,47 @@
+.container {
+  @apply w-full h-full bg-canvas flex flex-col overflow-hidden;
+}
+
+.recordsTab {
+  @apply flex-1 relative overflow-y-auto;
+}
+
+.emptyState {
+  @apply w-full h-full flex flex-col items-center justify-center gap-4 px-4 text-center;
+}
+
+.emptyEmoji {
+  @apply block text-6xl;
+}
+
+.emptyText {
+  @apply font-display text-headline-md text-on-surface font-semibold;
+}
+
+.startBtn {
+  @apply px-4 py-2 rounded bg-primary text-on-surface font-mono text-label-mono font-bold uppercase flex items-center gap-2 transition-colors;
+}
+
+.startBtn:hover {
+  opacity: 0.9;
+}
+
+.fab {
+  @apply fixed bottom-6 right-4 w-14 h-14 rounded-full bg-primary text-on-surface flex items-center justify-center transition-colors shadow-lg z-40;
+}
+
+.fab:hover {
+  opacity: 0.9;
+}
+
+.toastVisible {
+  @apply fixed bottom-8 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-surface-elevated text-on-surface text-body-sm font-semibold animate-fadeIn z-50;
+}
+
+.toastHidden {
+  @apply hidden;
+}
+
+.toastText {
+  @apply block;
+}

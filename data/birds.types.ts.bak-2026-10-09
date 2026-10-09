@@ -1,0 +1,261 @@
+/**
+ * TypeScript types for aves-data.json
+ * Usage: import { Bird, BirdsData } from '@/data/aves.types'
+ */
+
+export interface Bird {
+  id: number
+  commonName: string
+  scientificName: string
+  emoji: string
+
+  // Size
+  size: string
+  sizeCategory: 'diminuto' | 'pequeño' | 'mediano_pequeño' | 'mediano' | 'mediano_grande' | 'grande' | 'muy_grande'
+
+  // Colors
+  colors: string[]
+  dominantColor: string
+
+  // Habitat and schedule
+  mainHabitat: string
+  bestTime: string
+  timeCategory: 'madrugada' | 'amanecer' | 'manana' | 'manana_tarde' | 'tarde' | 'amanecer_tarde' | 'todo_dia'
+
+  // Characteristics
+  sound: string
+  rarity: string
+  rarityLevel: 1 | 2 | 3 | 4 | 5
+  behavior: string
+  conservationStatus: string
+  mainType: string
+
+  // Abilities
+  traits: string[]
+
+  // Filters
+  filters: BirdFilters
+
+  // Identification
+  quickId: string
+  doNotConfuseWith: string
+
+  // References
+  photoUrl: string
+  eBirdNotes: string
+}
+
+export interface BirdFilters {
+  keywords: string[]
+  color: string[]
+  habitat: string[]
+  timeOfDay: string[]
+  size: string[]
+  activity: string[]
+  status: string[]
+}
+
+export interface AvailableFilters {
+  size: string[]
+  color: string[]
+  habitat: string[]
+  timeOfDay: string[]
+  rarity: string[]
+  activity: string[]
+  conservationStatus: string[]
+}
+
+export interface Statistics {
+  bySize: Record<string, number>
+  byHabitat: Record<string, number>
+  byTimeOfDay: Record<string, number>
+  byRarity: Record<string, number>
+}
+
+export interface Search {
+  instructions: string
+  examples: string[]
+}
+
+export interface BirdsData {
+  version: string
+  lastUpdated: string
+  totalSpecies: number
+  birds: Bird[]
+  availableFilters: AvailableFilters
+  statistics: Statistics
+  search: Search
+}
+
+/**
+ * User observation types
+ */
+export interface BirdObservation {
+  id: string
+  birdId: number
+  commonName: string
+  scientificName: string
+  description?: string
+  time: string
+  date: string
+  synced: boolean
+  location?: string
+  photo?: string
+  notes?: string
+}
+
+/**
+ * Search types
+ */
+export interface SearchFilters {
+  color?: string
+  size?: string
+  habitat?: string
+  timeOfDay?: string
+  rarity?: number
+  activity?: string
+  term?: string
+}
+
+export interface SearchResult {
+  bird: Bird
+  relevance: number
+  matchReason: string
+}
+
+/**
+ * User statistics types
+ */
+export interface UserStatistics {
+  totalObservations: number
+  uniqueBirds: number
+  commonSpecies: number
+  rareSpecies: number
+  preferredTime: string
+  preferredHabitat: string
+  lastObservation: Date
+}
+
+/**
+ * Challenge types
+ */
+export interface Challenge {
+  id: string
+  name: string
+  description: string
+  criteria: SearchFilters
+  goal: number
+  reward: string
+  difficulty: 'easy' | 'medium' | 'hard'
+}
+
+/**
+ * Sighting prediction types
+ */
+export interface ProbableSighting {
+  bird: Bird
+  probability: number // 0-100
+  reason: string
+  optimalTime: string
+  optimalLocation: string
+}
+
+/**
+ * Enums
+ */
+export enum BirdSize {
+  TINY = 'diminuto',
+  SMALL = 'pequeño',
+  MEDIUM_SMALL = 'mediano_pequeño',
+  MEDIUM = 'mediano',
+  MEDIUM_LARGE = 'mediano_grande',
+  LARGE = 'grande',
+  VERY_LARGE = 'muy_grande',
+}
+
+export enum OptimalTime {
+  DAWN = 'madrugada',
+  SUNRISE = 'amanecer',
+  MORNING = 'manana',
+  MORNING_AFTERNOON = 'manana_tarde',
+  AFTERNOON = 'tarde',
+  SUNRISE_AFTERNOON = 'amanecer_tarde',
+  ALL_DAY = 'todo_dia',
+}
+
+export enum BirdColor {
+  WHITE = 'blanco',
+  BLACK = 'negro',
+  GRAY = 'gris',
+  BROWNISH = 'pardo',
+  BROWN = 'marrón',
+  BLUE = 'azul',
+  GREEN = 'verde',
+  RED = 'rojo',
+  YELLOW = 'amarillo',
+  GOLDEN = 'dorado',
+  ORANGE = 'naranja',
+}
+
+export enum BirdHabitat {
+  FLOWERS = 'flores',
+  WATER = 'agua',
+  SHALLOW_WATER = 'agua_poco_profunda',
+  DEEP_WATER = 'agua_profunda',
+  WETLANDS = 'humedales',
+  FOREST = 'bosque',
+  DENSE_FOREST = 'bosque_denso',
+  TREES = 'árboles',
+  TALL_TREES = 'árboles_altos',
+  CANOPY = 'dosel',
+  EDGES = 'bordes',
+  SHRUBS = 'arbustos',
+  THICKETS = 'matorrales',
+  GROUND = 'suelo',
+  SKY = 'cielo',
+  SOARING = 'sobrevolando',
+}
+
+/**
+ * Helper functions
+ */
+export function getRarityLevelText(level: number): string {
+  const labels = {
+    1: 'Muy Común',
+    2: 'Poco Común',
+    3: 'Moderado',
+    4: 'Común',
+    5: 'Bastante Común',
+  }
+  return labels[level as keyof typeof labels] || 'Desconocido'
+}
+
+export function getSizeCategoryText(size: string): string {
+  const labels: Record<string, string> = {
+    diminuto: 'Diminuto',
+    pequeño: 'Pequeño',
+    mediano_pequeño: 'Mediano-Pequeño',
+    mediano: 'Mediano',
+    mediano_grande: 'Mediano-Grande',
+    grande: 'Grande',
+    muy_grande: 'Muy Grande',
+  }
+  return labels[size] || size
+}
+
+export function getTimeCategoryText(timeOfDay: string): string {
+  const labels: Record<string, string> = {
+    madrugada: 'Madrugada',
+    amanecer: 'Amanecer',
+    manana: 'Mañana',
+    manana_tarde: 'Mañana-Tarde',
+    tarde: 'Tarde',
+    amanecer_tarde: 'Amanecer-Tarde',
+    todo_dia: 'Todo el Día',
+  }
+  return labels[timeOfDay] || timeOfDay
+}
+
+export function getRarityEmoji(level: number): string {
+  return '⭐'.repeat(level)
+}

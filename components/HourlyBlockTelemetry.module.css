@@ -1,0 +1,181 @@
+.telemetrySection {
+  @apply w-full bg-surface-obsidian rounded-xl p-4 mb-4 shadow-2xl;
+  position: relative;
+  overflow: hidden;
+}
+
+.telemetrySection::before {
+  content: '';
+  @apply absolute -right-20 -top-20 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none;
+}
+
+.telemetrySection::after {
+  content: '';
+  @apply absolute left-1/3 -bottom-24 w-80 h-80 bg-scientific-teal/10 rounded-full blur-3xl pointer-events-none;
+}
+
+.topBar {
+  @apply relative z-10 flex flex-wrap items-center justify-between gap-4 mb-4;
+}
+
+.blockLabel {
+  @apply flex items-center gap-1 bg-surface-elevated px-3 py-1 rounded;
+}
+
+.pulseIndicator {
+  @apply w-2 h-2 rounded-full bg-primary animate-pulse;
+}
+
+.blockTitle {
+  @apply text-on-surface tracking-tight;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.countdownBox {
+  @apply flex items-center gap-1 bg-primary/10 px-3 py-1 rounded;
+  color: #4edea3;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.countdownText {
+  @apply uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.locationBox {
+  @apply flex items-center gap-1 bg-surface-container-high px-3 py-1 rounded;
+  color: #06b6d4;
+  font-size: 0.875rem;
+}
+
+.locationText {
+  @apply text-on-surface;
+}
+
+.elevationBadge {
+  @apply text-muted bg-surface-obsidian px-1 py-0.5 rounded;
+  font-size: 0.625rem;
+}
+
+.actionBar {
+  @apply relative z-10 flex items-center gap-2 mb-4;
+}
+
+.voiceBtn,
+.blockBtn {
+  @apply flex items-center gap-1 px-3 py-1 rounded transition-all;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.voiceBtn {
+  @apply bg-surface-elevated hover:bg-surface-hover text-on-surface;
+}
+
+.blockBtn {
+  @apply bg-primary-container hover:bg-emerald-bio-light text-true-black;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.3);
+}
+
+.micIcon,
+.lockIcon {
+  font-size: 1.125rem;
+}
+
+.progressSection {
+  @apply relative z-10 flex flex-col gap-1 bg-surface-elevated/70 p-3 rounded-lg mb-4;
+}
+
+.warningBox {
+  @apply flex items-center gap-1 text-conservation-alert;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.warningText {
+  @apply text-conservation-alert;
+}
+
+.progressInfo {
+  @apply flex items-center justify-between;
+  font-size: 0.75rem;
+  color: rgba(160, 174, 192, 0.8);
+}
+
+.elapsedTime {
+  @apply text-primary;
+  font-weight: 700;
+}
+
+.progressBar {
+  @apply w-full h-2.5 bg-surface-obsidian rounded-full overflow-hidden;
+}
+
+.progressFill {
+  @apply h-full rounded-full transition-all duration-500;
+  background: linear-gradient(to right, #4edea3, #34d399, #f59e0b);
+}
+
+.kpiGrid {
+  @apply relative z-10 grid grid-cols-2 md:grid-cols-4 gap-4;
+}
+
+.kpiCard {
+  @apply bg-surface-elevated p-3 rounded flex flex-col justify-between;
+}
+
+.activeCard {
+  @apply bg-primary/5;
+}
+
+.kpiLabel {
+  @apply text-muted;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.kpiValue {
+  @apply flex items-baseline gap-1 mt-1;
+}
+
+.number {
+  @apply text-on-surface;
+  font-size: 2rem;
+}
+
+.unit {
+  @apply text-primary;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.activeCard .number {
+  @apply text-on-surface;
+}
+
+.activeCard .unit {
+  @apply text-muted;
+  font-size: 0.875rem;
+}
+
+.protocolBadge {
+  @apply text-scientific-teal;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(6, 182, 212, 0.1);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.kpiHint {
+  @apply text-dim;
+  font-size: 0.625rem;
+  margin: 0.25rem 0 0 0;
+}

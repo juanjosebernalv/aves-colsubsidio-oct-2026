@@ -1,0 +1,90 @@
+.sidebar {
+  @apply fixed left-0 top-0 h-screen w-72 bg-surface-obsidian flex flex-col justify-between select-none z-50;
+}
+
+.sidebarHeader {
+  @apply h-16 px-6 flex items-center gap-2;
+}
+
+.brandIcon {
+  @apply w-7 h-7 rounded bg-primary-container flex items-center justify-center text-true-black;
+}
+
+.brandText {
+  @apply flex flex-col;
+}
+
+.brandTitle {
+  @apply text-on-surface uppercase;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.brandSubtitle {
+  @apply text-primary uppercase;
+  font-size: 0.625rem;
+  margin: 0;
+}
+
+.statusCard {
+  @apply bg-surface-elevated rounded flex items-center justify-between mx-6 px-3 py-2;
+}
+
+.statusLabel {
+  @apply text-muted;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusValue {
+  @apply text-primary flex items-center gap-1;
+  font-size: 0.625rem;
+}
+
+.statusValue::before {
+  content: '';
+  @apply inline-block w-1.5 h-1.5 rounded-full bg-primary;
+}
+
+.navigation {
+  @apply flex flex-col gap-1 px-6 mt-2;
+}
+
+.navItem {
+  @apply flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-hover hover:text-on-surface transition-colors;
+  text-decoration: none;
+}
+
+.navItemActive {
+  @apply bg-primary-container text-on-primary-container;
+}
+
+.footer {
+  @apply p-6 flex flex-col gap-2;
+}
+
+.cacheCard {
+  @apply bg-surface-elevated p-2 rounded flex items-center justify-between;
+}
+
+.cacheInfo {
+  @apply flex flex-col;
+}
+
+.cacheLabel {
+  @apply text-muted;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.cacheValue {
+  @apply text-scientific-teal;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.version {
+  @apply flex items-center justify-between px-1 text-dim;
+  font-size: 0.625rem;
+}

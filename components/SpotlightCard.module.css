@@ -1,0 +1,144 @@
+.section {
+  @apply w-full px-4 py-3 bg-canvas;
+}
+
+.card {
+  @apply w-full rounded-lg overflow-hidden border border-tactical/35 bg-surface-obsidian;
+}
+
+.mediaBox {
+  @apply relative w-full h-56 overflow-hidden bg-gradient-to-br from-surface-container to-surface-elevated flex items-center justify-center;
+}
+
+.birdImage {
+  @apply w-full h-full object-cover;
+}
+
+.emojiDisplay {
+  @apply text-7xl;
+}
+
+.gradient {
+  @apply absolute inset-0 to-transparent;
+  background: linear-gradient(to top, rgba(11, 15, 18, 0.8), transparent);
+}
+
+.hudTopLeft {
+  @apply absolute top-2 left-3 flex items-center gap-1 px-2 py-1 rounded text-label-mono-sm text-primary;
+  background-color: rgba(11, 15, 18, 0.8);
+}
+
+.hudIcon {
+  @apply text-primary;
+}
+
+.hudText {
+  @apply text-primary font-semibold uppercase;
+}
+
+.hudTopRight {
+  @apply absolute top-2 right-3 flex items-center gap-1 px-2 py-1 rounded text-label-mono-sm text-secondary;
+  background-color: rgba(11, 15, 18, 0.8);
+}
+
+.hudIconTeal {
+  @apply text-secondary;
+}
+
+.hudTextTeal {
+  @apply text-secondary font-semibold uppercase;
+}
+
+.hudBottom {
+  @apply absolute bottom-0 inset-x-0 flex items-start justify-between p-3 gap-2;
+}
+
+.birdName {
+  @apply font-display text-headline-lg text-on-surface font-semibold;
+}
+
+.birdScientific {
+  @apply font-body text-body-md text-muted italic mt-0.5;
+}
+
+.conservationBadge {
+  @apply px-2 py-1 rounded-full border text-label-mono-sm font-bold uppercase flex-shrink-0;
+  border-color: rgba(245, 158, 11, 0.6);
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.conservationText {
+  @apply font-mono text-label-mono-sm text-amber font-bold uppercase;
+}
+
+.body {
+  @apply p-3 space-y-3;
+}
+
+.description {
+  @apply font-body text-body-md text-on-surface;
+}
+
+.biometricGrid {
+  @apply grid grid-cols-3 gap-2;
+}
+
+.biometricCell {
+  @apply flex flex-col gap-1 px-2 py-1.5 bg-surface-dim rounded;
+}
+
+.biometricLabel {
+  @apply font-mono text-label-mono-sm text-muted uppercase;
+}
+
+.biometricValue {
+  @apply font-mono text-body-md text-on-surface font-semibold;
+}
+
+.biometricValueTeal {
+  @apply font-mono text-body-md text-secondary font-semibold;
+}
+
+.waveformBox {
+  @apply space-y-1.5 px-2 py-2 bg-surface-dim rounded;
+}
+
+.waveformHeader {
+  @apply flex items-center justify-between gap-2;
+}
+
+.waveformLeft {
+  @apply flex items-center gap-1;
+}
+
+.waveIcon {
+  @apply text-secondary;
+}
+
+.waveLabel {
+  @apply font-mono text-label-mono-sm text-secondary font-semibold uppercase;
+}
+
+.waveTime {
+  @apply font-mono text-label-mono-sm text-muted;
+}
+
+.waveformBars {
+  @apply flex items-end justify-center gap-0.5 h-12;
+}
+
+.barActive {
+  @apply bg-secondary rounded-sm;
+}
+
+.barInactive {
+  @apply bg-surface-hover rounded-sm;
+}
+
+.actionBtn {
+  @apply w-full px-3 py-2 rounded bg-primary text-on-surface font-mono text-label-mono-sm font-bold uppercase flex items-center justify-center gap-2 transition-colors;
+}
+
+.actionBtn:hover {
+  opacity: 0.9;
+}

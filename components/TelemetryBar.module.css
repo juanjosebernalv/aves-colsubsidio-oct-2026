@@ -1,0 +1,35 @@
+.bar {
+  @apply w-full px-4 py-2 bg-canvas border-b border-tactical/35 flex items-center justify-between gap-4 text-label-mono-sm;
+}
+
+.left {
+  @apply flex items-center gap-1 text-muted;
+}
+
+.dot {
+  @apply inline-block w-1.5 h-1.5 rounded-full bg-primary;
+}
+
+.ecoLabel {
+  @apply text-primary font-semibold uppercase;
+}
+
+.sep {
+  @apply text-muted/50;
+}
+
+.oledLabel {
+  @apply text-muted uppercase;
+}
+
+.right {
+  @apply flex items-center gap-1.5 text-secondary;
+}
+
+.cloudIcon {
+  @apply text-secondary;
+}
+
+.cacheLabel {
+  @apply text-secondary uppercase font-semibold;
+}

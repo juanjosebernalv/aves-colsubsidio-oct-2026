@@ -1,0 +1,69 @@
+.btn {
+  @apply inline-flex items-center justify-center gap-2 font-mono text-label-mono font-bold uppercase tracking-widest rounded transition-colors duration-200 cursor-pointer;
+  min-height: 48px;
+  min-width: 48px;
+  border: none;
+  outline: none;
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 2px theme('colors.primary.DEFAULT');
+}
+
+.fullWidth {
+  @apply w-full;
+}
+
+/* Sizes */
+.sm {
+  @apply px-3 text-tag-mono;
+  min-height: 36px;
+}
+
+.md {
+  @apply px-4 py-2;
+}
+
+.lg {
+  @apply px-6 py-3 text-body-md;
+}
+
+/* Variants */
+.primary {
+  @apply bg-primary text-white;
+}
+
+.primary:hover:not(:disabled) {
+  @apply bg-primary-dark;
+}
+
+.secondary {
+  @apply bg-surface-elevated border border-tactical text-on-surface;
+  border-width: 1px;
+}
+
+.secondary:hover:not(:disabled) {
+  @apply border-secondary;
+}
+
+.danger {
+  @apply border text-error;
+  background: rgba(255, 180, 171, 0.1);
+  border-color: rgba(255, 180, 171, 0.3);
+}
+
+.danger:hover:not(:disabled) {
+  background: rgba(255, 180, 171, 0.2);
+}
+
+.ghost {
+  @apply bg-transparent text-muted;
+}
+
+.ghost:hover:not(:disabled) {
+  @apply text-on-surface bg-surface-hover;
+}

@@ -1,0 +1,95 @@
+.header {
+  @apply fixed top-0 left-72 right-0 h-16 bg-surface-obsidian/95 backdrop-blur-xl z-40 flex items-center justify-between px-6;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.2);
+}
+
+.telemetryLeft {
+  @apply flex items-center gap-6;
+}
+
+.timeBox {
+  @apply flex items-center gap-1 text-on-surface;
+  color: #4edea3;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.timeCode {
+  @apply text-primary;
+}
+
+.timeValue {
+  @apply text-on-surface;
+}
+
+.rtkBox {
+  @apply flex items-center gap-1 text-muted;
+  color: #06b6d4;
+  font-size: 0.75rem;
+}
+
+.rtkLabel {
+  @apply text-on-surface;
+}
+
+.rtkValue {
+  @apply text-scientific-teal;
+}
+
+.queueBox {
+  @apply flex items-center gap-1 text-muted;
+  font-size: 0.75rem;
+}
+
+.queueCount {
+  @apply text-on-surface;
+  font-weight: 700;
+}
+
+.telemetryRight {
+  @apply flex items-center gap-4;
+}
+
+.batteryBox {
+  @apply flex items-center gap-1 text-muted;
+  font-size: 0.75rem;
+}
+
+.batteryValue {
+  @apply text-on-surface;
+  font-weight: 700;
+}
+
+.newRecordBtn {
+  @apply flex items-center gap-1 px-3 py-1 bg-primary-container hover:bg-emerald-bio-light text-true-black rounded transition-all;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.userInfo {
+  @apply flex items-center gap-2 pl-6;
+  border-left: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.userDetails {
+  @apply flex flex-col text-right;
+}
+
+.userName {
+  @apply text-on-surface;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.userRole {
+  @apply text-muted;
+  font-size: 0.625rem;
+}
+
+.userAvatar {
+  @apply w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary;
+  font-size: 0.875rem;
+}

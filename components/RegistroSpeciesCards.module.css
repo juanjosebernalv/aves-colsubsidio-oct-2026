@@ -1,0 +1,93 @@
+.container {
+  @apply flex flex-col gap-4;
+}
+
+.sectionHeader {
+  @apply flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-border-tactical/30;
+}
+
+.headerLeft {
+  @apply flex items-center gap-3;
+}
+
+.sectionTitle {
+  @apply text-on-surface;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.countBadge {
+  @apply bg-surface-elevated text-scientific-teal px-2 py-1 rounded;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.sortControl {
+  @apply flex items-center gap-1 text-muted;
+  font-size: 0.75rem;
+}
+
+.sortValue {
+  @apply text-on-surface;
+  font-weight: 700;
+}
+
+.cardsContainer {
+  @apply flex flex-col gap-4;
+}
+
+.compactGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.expectedSection {
+  @apply bg-surface-container-low rounded-xl p-4 shadow-lg flex flex-col gap-3;
+}
+
+.expectedTitle {
+  @apply text-muted uppercase;
+  font-size: 0.625rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.expectedSubtitle {
+  @apply text-dim;
+  font-size: 0.625rem;
+  margin: 0;
+}
+
+.expectedGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-2 pt-1;
+}
+
+.expectedCard {
+  @apply bg-surface-obsidian p-2 rounded flex items-center justify-between gap-2;
+}
+
+.expectedInfo {
+  @apply flex flex-col;
+}
+
+.expectedName {
+  @apply text-on-surface;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.expectedScientific {
+  @apply text-muted italic;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.addBtn {
+  @apply flex items-center gap-1 bg-surface-elevated hover:bg-primary-container hover:text-true-black text-on-surface px-3 py-1 rounded transition-all;
+  border: none;
+  cursor: pointer;
+  font-size: 0.625rem;
+  font-weight: 700;
+  white-space: nowrap;
+}

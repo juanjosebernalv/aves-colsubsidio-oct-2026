@@ -1,0 +1,79 @@
+.loading {
+  @apply min-h-screen bg-canvas flex flex-col items-center justify-center gap-4;
+}
+
+.loadingEmoji {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.loadingText {
+  @apply font-mono text-label-mono text-muted;
+  letter-spacing: 0.05em;
+}
+
+.main {
+  @apply bg-canvas flex-1 overflow-y-auto;
+  min-height: 100svh;
+  padding-top: calc(env(safe-area-inset-top, 0px));
+}
+
+.recordsTab {
+  @apply relative;
+}
+
+.emptyState {
+  @apply flex flex-col items-center justify-center px-6 text-center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 1rem;
+}
+
+.emptyEmoji {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.emptyText {
+  @apply font-body text-body-lg text-muted;
+}
+
+.startBtn {
+  @apply flex items-center gap-2 font-mono text-label-mono text-white uppercase bg-primary;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+  min-height: 48px;
+  font-size: 20px;
+}
+
+.startBtn:hover {
+  background-color: theme('colors.primary.dark');
+}
+
+.startBtn:active {
+  transform: scale(0.98);
+}
+
+.fab {
+  @apply fixed bg-primary text-white rounded-full z-30 flex items-center justify-center;
+  bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.2s;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+}
+
+.fab:hover {
+  background-color: theme('colors.primary.dark');
+  transform: scale(1.1);
+}
+
+.fab:active {
+  transform: scale(0.95);
+}

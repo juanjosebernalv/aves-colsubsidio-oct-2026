@@ -1,0 +1,35 @@
+.row {
+  @apply w-full px-4 py-2.5 bg-canvas flex items-center gap-2 overflow-x-auto snap-x snap-mandatory;
+}
+
+.chipInactive {
+  @apply flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-obsidian border text-muted text-label-mono-sm whitespace-nowrap transition-all disabled:opacity-50;
+  border-color: rgba(51, 65, 85, 0.5);
+}
+
+.chipActive {
+  @apply flex items-center gap-1.5 px-3 py-1.5 rounded border border-primary text-primary text-label-mono-sm whitespace-nowrap transition-all;
+  background-color: rgba(16, 185, 129, 0.12);
+}
+
+.chipReset {
+  @apply flex items-center gap-1 px-3 py-1.5 rounded text-muted text-label-mono-sm whitespace-nowrap transition-all;
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.chipReset:hover {
+  border-color: rgba(51, 65, 85, 0.8);
+}
+
+.chipIcon {
+  @apply text-current;
+}
+
+.activeDot {
+  @apply inline-block w-1 h-1 rounded-full bg-primary flex-shrink-0;
+}
+
+.countBadge {
+  @apply inline-flex items-center justify-center w-5 h-5 rounded-full text-primary text-tag-mono font-semibold;
+  background-color: rgba(16, 185, 129, 0.2);
+}

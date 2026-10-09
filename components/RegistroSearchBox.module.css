@@ -1,0 +1,122 @@
+.searchSection {
+  @apply w-full bg-surface-container-low rounded-xl p-4 mb-4 shadow-xl flex flex-col gap-4;
+}
+
+.searchBox {
+  @apply flex items-center gap-2;
+}
+
+.searchInputWrapper {
+  @apply w-full flex items-center gap-2 bg-surface-obsidian p-1 rounded-lg;
+  padding-left: 0.75rem;
+}
+
+.searchInput {
+  @apply w-full bg-transparent text-on-surface placeholder:text-dim focus:outline-none px-1;
+  font-size: 0.875rem;
+}
+
+.searchTools {
+  @apply flex items-center gap-1 pr-1;
+}
+
+.toolBtn {
+  @apply flex items-center gap-1 bg-surface-elevated hover:bg-surface-hover px-3 py-1 rounded text-scientific-teal transition-colors;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.toolLabel {
+  @apply hidden sm:inline;
+}
+
+.oledBadge {
+  @apply hidden lg:flex items-center gap-1 px-2 py-1 rounded text-primary bg-primary/10;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.filterContainer {
+  @apply flex flex-col gap-3 pt-1;
+}
+
+.colorFilters {
+  @apply flex items-center gap-3 flex-wrap;
+}
+
+.filterLabel {
+  @apply text-dim uppercase;
+  font-size: 0.625rem;
+  letter-spacing: 0.05em;
+  min-width: 100px;
+}
+
+.buttonGroup {
+  @apply flex items-center gap-1 flex-wrap;
+}
+
+.colorBtn,
+.sizeBtn,
+.tagBtn {
+  @apply px-2 py-1 rounded transition-colors;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.colorBtn {
+  @apply flex items-center gap-1.5 bg-surface-elevated text-on-surface hover:bg-surface-hover;
+}
+
+.colorBtnActive {
+  @apply bg-primary/15 text-primary;
+}
+
+.colorDot {
+  @apply w-3 h-3 rounded-full;
+}
+
+.sizeFilters {
+  @apply flex items-center justify-between flex-wrap gap-3;
+}
+
+.sizeBtn {
+  @apply bg-surface-elevated text-muted hover:text-on-surface;
+}
+
+.sizeBtnActive {
+  @apply bg-primary/15 text-primary;
+  font-weight: 700;
+}
+
+.tagsGroup {
+  @apply flex items-center gap-1 flex-wrap;
+}
+
+.tagBtn {
+  @apply bg-surface-elevated text-muted hover:text-on-surface;
+}
+
+.tagBtnActive {
+  @apply bg-primary/10 text-primary;
+}
+
+.filterFooter {
+  @apply flex items-center justify-between flex-wrap gap-3 ml-auto;
+}
+
+.filterCount {
+  @apply bg-surface-elevated px-2 py-1 rounded text-on-surface;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.resetBtn {
+  @apply text-dim hover:text-on-surface underline transition-colors;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+}

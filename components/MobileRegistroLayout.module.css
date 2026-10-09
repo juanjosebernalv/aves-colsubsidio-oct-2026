@@ -1,0 +1,194 @@
+.container {
+  @apply w-full min-h-screen bg-surface flex flex-col pb-24;
+}
+
+.header {
+  @apply fixed top-0 left-0 right-0 bg-surface-obsidian/95 backdrop-blur-xl z-40 px-4 py-2;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.headerTop {
+  @apply flex items-center justify-between mb-2;
+}
+
+.timeSection {
+  @apply flex flex-col;
+}
+
+.timeLabel {
+  @apply text-on-surface;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.timeRange {
+  @apply text-muted;
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.metricsSection {
+  @apply flex gap-4;
+}
+
+.metric {
+  @apply flex flex-col items-center;
+}
+
+.metricLabel {
+  @apply text-muted;
+  font-size: 0.625rem;
+}
+
+.metricValue {
+  @apply text-primary;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.progressBar {
+  @apply w-full h-2.5 bg-surface-elevated rounded-full overflow-hidden;
+}
+
+.progressFill {
+  @apply h-full rounded-full transition-all duration-500;
+  background: linear-gradient(to right, #4edea3, #34d399, #f59e0b);
+}
+
+.progressLabel {
+  @apply text-muted text-center mt-1;
+  font-size: 0.625rem;
+}
+
+.searchSection {
+  @apply fixed top-24 left-0 right-0 bg-surface-obsidian/90 backdrop-blur-lg z-30 px-4 py-2;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.2);
+}
+
+.searchInput {
+  @apply w-full bg-surface-elevated text-on-surface placeholder:text-dim rounded-lg px-3 py-2 focus:outline-none focus:ring-1 focus:ring-primary mb-2;
+  font-size: 0.875rem;
+}
+
+.filterChips {
+  @apply flex gap-1 overflow-x-auto pb-1;
+}
+
+.chip {
+  @apply px-3 py-1 rounded-full bg-surface-elevated text-on-surface hover:bg-surface-hover transition-colors;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.cardsStack {
+  @apply flex flex-col gap-4 px-4 mt-56;
+}
+
+.mobileCard {
+  @apply bg-surface-obsidian rounded-lg overflow-hidden shadow-lg;
+}
+
+.mobileImageContainer {
+  @apply relative h-48 bg-surface-elevated overflow-hidden;
+}
+
+.mobileImage {
+  @apply w-full h-full object-cover;
+}
+
+.mobilePlaceholder {
+  @apply w-full h-full flex items-center justify-center;
+  font-size: 2rem;
+}
+
+.mobileImageOverlay {
+  @apply absolute top-2 left-2 right-2 flex justify-between items-center;
+}
+
+.timeTag {
+  @apply bg-surface-obsidian/80 backdrop-blur px-2 py-0.5 rounded text-primary;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.mobileCardContent {
+  @apply p-4;
+}
+
+.mobileName {
+  @apply text-on-surface;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.mobileScientific {
+  @apply text-muted italic;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.mobileCounterRow {
+  @apply flex items-center gap-4 mt-4;
+}
+
+.minusBtn,
+.plusBtn {
+  @apply w-11 h-11 rounded-lg flex items-center justify-center;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 200ms;
+}
+
+.minusBtn {
+  @apply bg-surface-elevated hover:bg-surface-hover text-on-surface;
+}
+
+.plusBtn {
+  @apply bg-primary-container hover:bg-emerald-bio-light text-true-black font-bold;
+}
+
+.mobileCounterDisplay {
+  @apply flex-1 flex flex-col items-center justify-center bg-surface-elevated rounded-lg py-2;
+}
+
+.mobileCount {
+  @apply text-primary font-bold;
+  font-size: 2rem;
+}
+
+.mobileCountLabel {
+  @apply text-muted mt-0.5;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.bottomNav {
+  @apply fixed bottom-0 left-0 right-0 bg-surface-obsidian/95 backdrop-blur-xl flex items-center justify-around px-2 py-2;
+  border-top: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.navBtn {
+  @apply flex flex-col items-center gap-0.5 text-muted hover:text-on-surface transition-colors;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.navBtn span {
+  @apply text-muted;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.syncBtn {
+  @apply bg-primary-container hover:bg-emerald-bio-light text-true-black px-4 py-1 rounded-full;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

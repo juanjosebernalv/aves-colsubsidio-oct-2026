@@ -1,0 +1,174 @@
+.timeline {
+  @apply bg-surface-obsidian rounded-xl p-4 shadow-2xl flex flex-col gap-4;
+}
+
+.timelineHeader {
+  @apply flex items-center justify-between pb-2;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+}
+
+.headerTop {
+  @apply flex items-center justify-between;
+  color: #4edea3;
+}
+
+.timelineTitle {
+  @apply text-on-surface;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0 0.75rem;
+}
+
+.fullDayBadge {
+  @apply text-scientific-teal bg-scientific-teal/10 px-2 py-0.5 rounded;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.blocksList {
+  @apply flex flex-col gap-1;
+}
+
+.blockItem {
+  @apply bg-surface-elevated p-2 rounded flex items-center justify-between hover:bg-surface-hover transition-colors cursor-pointer;
+}
+
+.blockClosed {
+  @apply opacity-100;
+}
+
+.blockActive {
+  @apply bg-scientific-teal/5;
+}
+
+.blockCheck {
+  @apply flex items-center text-primary;
+}
+
+.blockInfo {
+  @apply flex flex-col min-w-0 flex-1 px-2;
+}
+
+.blockTime {
+  @apply text-on-surface;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.blockPhase {
+  @apply text-muted;
+  font-size: 0.625rem;
+  margin: 0;
+}
+
+.blockStats {
+  @apply text-right;
+}
+
+.statNumber {
+  @apply text-scientific-teal;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.blockAction {
+  @apply text-dim;
+  font-size: 0.625rem;
+  margin: 0;
+}
+
+.activeLabel {
+  @apply text-primary;
+  font-size: 0.625rem;
+  display: block;
+}
+
+.chartsSection {
+  @apply pt-2;
+  border-top: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.chartsTitle {
+  @apply text-muted uppercase mb-2;
+  font-size: 0.625rem;
+  font-weight: 700;
+  margin: 0;
+  display: block;
+}
+
+.familyChart {
+  @apply flex flex-col gap-1;
+}
+
+.chartRow {
+  @apply flex items-center gap-2;
+}
+
+.familyName {
+  @apply text-muted w-24;
+  font-size: 0.75rem;
+}
+
+.barContainer {
+  @apply flex-1 flex items-center gap-1;
+}
+
+.bar {
+  @apply h-2.5 bg-primary rounded;
+}
+
+.barLabel {
+  @apply text-dim min-w-max;
+  font-size: 0.625rem;
+}
+
+.syncSection {
+  @apply pt-2;
+  border-top: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.syncTitle {
+  @apply text-muted uppercase mb-2;
+  font-size: 0.625rem;
+  font-weight: 700;
+  margin: 0;
+  display: block;
+}
+
+.syncStatus {
+  @apply flex flex-col gap-1 mb-2;
+}
+
+.syncItem {
+  @apply flex items-center justify-between;
+  font-size: 0.75rem;
+}
+
+.syncLabel {
+  @apply text-muted;
+}
+
+.syncValue {
+  @apply text-on-surface;
+  font-weight: 700;
+}
+
+.syncValueAlert {
+  @apply text-conservation-alert;
+  font-weight: 700;
+}
+
+.syncValueSuccess {
+  @apply text-primary;
+  font-weight: 700;
+}
+
+.syncBtn {
+  @apply w-full flex items-center justify-center gap-1 bg-primary-container hover:bg-emerald-bio-light text-true-black py-2 rounded transition-all;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

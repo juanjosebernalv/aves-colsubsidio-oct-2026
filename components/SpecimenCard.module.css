@@ -1,0 +1,123 @@
+.card {
+  @apply w-full rounded-lg overflow-hidden border border-tactical/35 bg-surface-obsidian;
+}
+
+.top {
+  @apply flex gap-3 p-3;
+}
+
+.imageBox {
+  @apply relative w-20 h-20 rounded-lg bg-gradient-to-br from-surface-container to-surface-elevated flex-shrink-0 overflow-hidden flex items-center justify-center;
+}
+
+.birdImage {
+  @apply w-full h-full object-cover;
+}
+
+.emoji {
+  @apply text-4xl;
+}
+
+.imageOverlay {
+  @apply absolute inset-0 bg-gradient-to-t from-surface-obsidian/40 to-transparent;
+}
+
+.content {
+  @apply flex-1 flex flex-col gap-2 min-w-0;
+}
+
+.nameRow {
+  @apply flex items-start gap-2 justify-between;
+}
+
+.nameStack {
+  @apply flex-1 min-w-0;
+}
+
+.commonName {
+  @apply font-display text-body-lg text-on-surface font-semibold truncate;
+}
+
+.scientificName {
+  @apply font-body text-body-sm text-muted italic truncate;
+}
+
+.badgeEndemic {
+  @apply px-2 py-1 rounded-full border border-primary text-label-mono-sm text-primary font-bold uppercase flex-shrink-0;
+  background-color: rgba(16, 185, 129, 0.12);
+}
+
+.badgeThreatened {
+  @apply px-2 py-1 rounded-full border border-amber text-label-mono-sm text-amber font-bold uppercase flex-shrink-0;
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.badgeStable {
+  @apply px-2 py-1 rounded-full border border-primary text-label-mono-sm text-primary font-bold uppercase flex-shrink-0;
+  background-color: rgba(16, 185, 129, 0.12);
+}
+
+.badgeRare {
+  @apply px-2 py-1 rounded-full border border-amber text-label-mono-sm text-amber font-bold uppercase flex-shrink-0;
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.metaRow {
+  @apply flex items-center gap-1 text-label-mono-sm;
+}
+
+.family {
+  @apply text-secondary font-semibold uppercase truncate;
+}
+
+.metaDot {
+  @apply text-muted/50;
+}
+
+.habitat {
+  @apply text-muted uppercase truncate;
+}
+
+.colorsRow {
+  @apply flex items-center gap-1.5;
+}
+
+.colorDot {
+  @apply inline-block w-3 h-3 rounded-full border border-tactical/35;
+}
+
+.traitLabel {
+  @apply px-2 py-0.5 rounded-full border border-tactical/35 text-label-mono-sm text-muted font-semibold;
+}
+
+.description {
+  @apply px-3 py-2 text-body-sm text-on-surface;
+}
+
+.footer {
+  @apply flex items-center gap-2 px-3 py-2 border-t border-tactical/35;
+}
+
+.audioBtn {
+  @apply flex-1 flex items-center gap-1.5 px-2 py-1.5 rounded border border-tactical/50 bg-surface-dim text-secondary text-label-mono-sm font-semibold uppercase hover:border-secondary/50 transition-colors;
+}
+
+.audioIcon {
+  @apply text-secondary;
+}
+
+.audioLabel {
+  @apply truncate text-left;
+}
+
+.logBtn {
+  @apply px-3 py-1.5 rounded bg-primary text-on-surface text-label-mono-sm font-bold uppercase flex items-center gap-1 transition-colors;
+}
+
+.logBtn:hover {
+  opacity: 0.9;
+}
+
+.logIcon {
+  @apply text-on-surface;
+}

@@ -1,0 +1,1033 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-29",
+  "totalSpecies": 13,
+  "birds": [
+    {
+      "id": 1,
+      "commonName": "Paujil de Pico Azul",
+      "scientificName": "Crax alberti",
+      "emoji": "🦃",
+      "size": "Grande (80-90cm)",
+      "sizeCategory": "grande",
+      "colors": [
+        "Negro azabache",
+        "Pico azul brillante",
+        "Patas rojas",
+        "Cresta rizos"
+      ],
+      "dominantColor": "Negro",
+      "mainHabitat": "Bosque frondoso",
+      "bestTime": "Amanecer",
+      "timeCategory": "amanecer",
+      "sound": "Crau-crau fuerte",
+      "rarity": "Poco común",
+      "rarityLevel": 2,
+      "behavior": "Ave ENORME negra con pico azul",
+      "conservationStatus": "Extinción",
+      "mainType": "Galliforme",
+      "traits": [
+        "Terrestre",
+        "Bosque denso"
+      ],
+      "filters": {
+        "keywords": [
+          "negro",
+          "pico azul",
+          "grande",
+          "bosque",
+          "extinto",
+          "amenazado",
+          "gallináceo",
+          "cresta",
+          "amanecer",
+          "ruidoso"
+        ],
+        "color": [
+          "negro",
+          "azul"
+        ],
+        "habitat": [
+          "bosque",
+          "bosque_denso"
+        ],
+        "timeOfDay": [
+          "amanecer",
+          "madrugada"
+        ],
+        "size": [
+          "grande",
+          "muy_grande"
+        ],
+        "activity": [
+          "terrestre"
+        ],
+        "status": [
+          "vulnerable",
+          "amenazado"
+        ]
+      },
+      "quickId": "Negro + Pico Azul = Paujil",
+      "doNotConfuseWith": "No confundir con gallo negro",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29674004/large.jpeg",
+      "eBirdNotes": "Poco común en Piscilago"
+    },
+    {
+      "id": 2,
+      "commonName": "Guacharaca Colombiana",
+      "scientificName": "Ortalis columbiana",
+      "emoji": "🐦",
+      "size": "Pequeño (24-27cm)",
+      "sizeCategory": "pequeño",
+      "colors": [
+        "Pardo grisáceo",
+        "Cabeza gris",
+        "Alas marrón",
+        "Cola larga"
+      ],
+      "dominantColor": "Pardo",
+      "mainHabitat": "Matorrales y bordes",
+      "bestTime": "Todo el día",
+      "timeCategory": "todo_dia",
+      "sound": "¡Gua-cha-RCA!",
+      "rarity": "Muy común",
+      "rarityLevel": 5,
+      "behavior": "Grupo ruidoso parloteando",
+      "conservationStatus": "Estable",
+      "mainType": "Cuco",
+      "traits": [
+        "Grupo",
+        "Ruidoso",
+        "Viven en familia"
+      ],
+      "filters": {
+        "keywords": [
+          "parda",
+          "pequeña",
+          "ruidosa",
+          "común",
+          "grupo",
+          "matorrales",
+          "bordes",
+          "familia",
+          "vocalización",
+          "fácil_ver"
+        ],
+        "color": [
+          "pardo",
+          "gris",
+          "marrón"
+        ],
+        "habitat": [
+          "matorrales",
+          "bordes",
+          "arbustos"
+        ],
+        "timeOfDay": [
+          "todo_dia"
+        ],
+        "size": [
+          "pequeño"
+        ],
+        "activity": [
+          "social",
+          "ruidoso"
+        ],
+        "status": [
+          "común",
+          "estable"
+        ]
+      },
+      "quickId": "Parda pequeña + Ruidosa = Guacharaca",
+      "doNotConfuseWith": "No confundir con otros pajarillos",
+      "photoUrl": "https://static.inaturalist.org/photos/90802337/large.jpg",
+      "eBirdNotes": "Muy fácil de ver, sonido inconfundible"
+    },
+    {
+      "id": 3,
+      "commonName": "Loro Gavilán",
+      "scientificName": "Harpagus bidentatus",
+      "emoji": "🦜",
+      "size": "Pequeño-Mediano (30-35cm)",
+      "sizeCategory": "mediano_pequeño",
+      "colors": [
+        "Verde dorso",
+        "Rojo/naranja cabeza",
+        "Verde pálido vientre",
+        "Cola verde"
+      ],
+      "dominantColor": "Verde",
+      "mainHabitat": "Dosel, árboles altos",
+      "bestTime": "Mañana y tarde",
+      "timeCategory": "manana_tarde",
+      "sound": "Cri-cri-cri",
+      "rarity": "Moderado",
+      "rarityLevel": 3,
+      "behavior": "Loro verde con cabeza roja en parejas",
+      "conservationStatus": "Estable",
+      "mainType": "Loro",
+      "traits": [
+        "Parejas",
+        "Árboles altos",
+        "Acrobático"
+      ],
+      "filters": {
+        "keywords": [
+          "loro",
+          "verde",
+          "rojo",
+          "cabeza_roja",
+          "árboles_altos",
+          "dosel",
+          "parejas",
+          "colorido",
+          "volador",
+          "psittaciforme"
+        ],
+        "color": [
+          "verde",
+          "rojo"
+        ],
+        "habitat": [
+          "dosel",
+          "árboles_altos",
+          "bosque"
+        ],
+        "timeOfDay": [
+          "manana",
+          "tarde"
+        ],
+        "size": [
+          "mediano",
+          "pequeño"
+        ],
+        "activity": [
+          "volador",
+          "social"
+        ],
+        "status": [
+          "moderado",
+          "estable"
+        ]
+      },
+      "quickId": "Verde + Cabeza Roja = Loro Gavilán",
+      "doNotConfuseWith": "No confundir con otros loros",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/463373381/large.jpg",
+      "eBirdNotes": "Necesita binoculares, prefiere árboles altos"
+    },
+    {
+      "id": 4,
+      "commonName": "Rey Gallinazo",
+      "scientificName": "Sarcoramphus papa",
+      "emoji": "🦅",
+      "size": "Enorme (85cm largo)",
+      "sizeCategory": "muy_grande",
+      "colors": [
+        "Blanco cremoso cuerpo",
+        "Negro alas",
+        "Cabeza desnuda colores",
+        "Naranja, rojo, amarillo"
+      ],
+      "dominantColor": "Blanco",
+      "mainHabitat": "Sobrevolando",
+      "bestTime": "Mañana",
+      "timeCategory": "manana",
+      "sound": "Casi silencioso",
+      "rarity": "Poco común",
+      "rarityLevel": 2,
+      "behavior": "Enorme blanca con cabeza desnuda en círculos",
+      "conservationStatus": "Estable",
+      "mainType": "Catartiforme",
+      "traits": [
+        "Planeador",
+        "Carroñero",
+        "Circulando"
+      ],
+      "filters": {
+        "keywords": [
+          "carroñero",
+          "enorme",
+          "volador",
+          "cabeza_desnuda",
+          "blanco",
+          "planeo",
+          "rapaz",
+          "limpiador",
+          "poco_común",
+          "impresionante"
+        ],
+        "color": [
+          "blanco",
+          "negro"
+        ],
+        "habitat": [
+          "cielo",
+          "sobrevolando"
+        ],
+        "timeOfDay": [
+          "manana"
+        ],
+        "size": [
+          "muy_grande"
+        ],
+        "activity": [
+          "volador",
+          "planeo"
+        ],
+        "status": [
+          "poco_común"
+        ]
+      },
+      "quickId": "Enorme + Cabeza desnuda = Rey Gallinazo",
+      "doNotConfuseWith": "No confundir con otros voladores",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2967049/large.jpg",
+      "eBirdNotes": "Espectacular cuando vuela en círculos"
+    },
+    {
+      "id": 5,
+      "commonName": "Arrendajo Cristado",
+      "scientificName": "Cyanocorax mystacalis",
+      "emoji": "🪶",
+      "size": "Mediano (28-35cm)",
+      "sizeCategory": "mediano",
+      "colors": [
+        "Azul brillante",
+        "Cresta tipo punk",
+        "Vientre blanco",
+        "Líneas negras ojos"
+      ],
+      "dominantColor": "Azul",
+      "mainHabitat": "Bordes y arbustos",
+      "bestTime": "Todo el día",
+      "timeCategory": "todo_dia",
+      "sound": "Muy ruidoso",
+      "rarity": "Común",
+      "rarityLevel": 4,
+      "behavior": "Azul + cresta grupo ruidoso",
+      "conservationStatus": "Estable",
+      "mainType": "Corvidae",
+      "traits": [
+        "Inteligente",
+        "Curioso",
+        "Grupo"
+      ],
+      "filters": {
+        "keywords": [
+          "azul",
+          "cresta",
+          "punk",
+          "inteligente",
+          "ruidoso",
+          "común",
+          "grupo",
+          "curioso",
+          "bordes",
+          "vistoso"
+        ],
+        "color": [
+          "azul"
+        ],
+        "habitat": [
+          "bordes",
+          "arbustos"
+        ],
+        "timeOfDay": [
+          "todo_dia"
+        ],
+        "size": [
+          "mediano"
+        ],
+        "activity": [
+          "social",
+          "ruidoso"
+        ],
+        "status": [
+          "común",
+          "estable"
+        ]
+      },
+      "quickId": "Azul + Cresta = Arrendajo",
+      "doNotConfuseWith": "No confundir con colibrí azul",
+      "photoUrl": "https://static.inaturalist.org/photos/152537722/large.jpeg",
+      "eBirdNotes": "Fácil identificar, muy vistoso"
+    },
+    {
+      "id": 6,
+      "commonName": "Cigüeñuela Común",
+      "scientificName": "Himantopus mexicanus",
+      "emoji": "🦵",
+      "size": "Pequeño (35-40cm) - patas enormes",
+      "sizeCategory": "pequeño",
+      "colors": [
+        "Blanco puro vientre",
+        "Negro dorso",
+        "Cabeza negra/blanca",
+        "Patas rojas enormes"
+      ],
+      "dominantColor": "Blanco",
+      "mainHabitat": "Agua poco profunda",
+      "bestTime": "Amanecer y tarde",
+      "timeCategory": "amanecer_tarde",
+      "sound": "Agudo/estridente",
+      "rarity": "Moderado",
+      "rarityLevel": 3,
+      "behavior": "Blanca-negra con patas ridículas en agua",
+      "conservationStatus": "Estable",
+      "mainType": "Charadriforme",
+      "traits": [
+        "Acuática",
+        "Patas largas",
+        "Agua poco profunda"
+      ],
+      "filters": {
+        "keywords": [
+          "patas_largas",
+          "agua",
+          "blanca",
+          "negra",
+          "acuática",
+          "zancuda",
+          "poco_profundo",
+          "característica_distintiva",
+          "comedora",
+          "elegante"
+        ],
+        "color": [
+          "blanco",
+          "negro"
+        ],
+        "habitat": [
+          "agua",
+          "agua_poco_profunda"
+        ],
+        "timeOfDay": [
+          "amanecer",
+          "tarde"
+        ],
+        "size": [
+          "pequeño"
+        ],
+        "activity": [
+          "acuática"
+        ],
+        "status": [
+          "moderado"
+        ]
+      },
+      "quickId": "Patas LARGAS + agua = Cigüeñuela",
+      "doNotConfuseWith": "No confundir con garzas (más grandes)",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279771952/large.jpg",
+      "eBirdNotes": "Patas desproporcionadas muy distintivas"
+    },
+    {
+      "id": 7,
+      "commonName": "Garza Blanca",
+      "scientificName": "Ardea alba",
+      "emoji": "⚪",
+      "size": "Grande (85-105cm)",
+      "sizeCategory": "grande",
+      "colors": [
+        "Completamente blanca",
+        "Pico amarillo brillante",
+        "Ojos amarillos",
+        "Patas negras largas",
+        "Cuello en S"
+      ],
+      "dominantColor": "Blanco",
+      "mainHabitat": "Agua y orillas",
+      "bestTime": "Amanecer y tarde",
+      "timeCategory": "amanecer_tarde",
+      "sound": "Silenciosa",
+      "rarity": "Común",
+      "rarityLevel": 4,
+      "behavior": "Cigüeña blanca elegante en agua",
+      "conservationStatus": "Estable",
+      "mainType": "Ardeidae",
+      "traits": [
+        "Pescadora experta",
+        "Paciencia",
+        "Elegancia"
+      ],
+      "filters": {
+        "keywords": [
+          "blanca",
+          "garza",
+          "grande",
+          "agua",
+          "pescadora",
+          "pico_amarillo",
+          "elegante",
+          "zancuda",
+          "común",
+          "característica"
+        ],
+        "color": [
+          "blanco"
+        ],
+        "habitat": [
+          "agua",
+          "orillas",
+          "humedales"
+        ],
+        "timeOfDay": [
+          "amanecer",
+          "tarde"
+        ],
+        "size": [
+          "grande"
+        ],
+        "activity": [
+          "acuática",
+          "pescadora"
+        ],
+        "status": [
+          "común",
+          "estable"
+        ]
+      },
+      "quickId": "Grande + Blanca pura = Garza Blanca",
+      "doNotConfuseWith": "No confundir con cigüeña (patas rojas)",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12406141/large.jpeg",
+      "eBirdNotes": "Paciencia extrema cazando, espera horas"
+    },
+    {
+      "id": 8,
+      "commonName": "Garza Azulada",
+      "scientificName": "Ardea herodias",
+      "emoji": "🟦",
+      "size": "Muy Grande (110-130cm)",
+      "sizeCategory": "muy_grande",
+      "colors": [
+        "Gris-azul oscuro",
+        "Cabeza gris oscuro",
+        "Pecho blanco rayado",
+        "Pico amarillo grande",
+        "Patas gris-oliváceo"
+      ],
+      "dominantColor": "Gris-azul",
+      "mainHabitat": "Agua profunda",
+      "bestTime": "Amanecer",
+      "timeCategory": "amanecer",
+      "sound": "Guturales raros",
+      "rarity": "Moderado",
+      "rarityLevel": 3,
+      "behavior": "Garza gris-azul enorme en agua",
+      "conservationStatus": "Estable",
+      "mainType": "Ardeidae",
+      "traits": [
+        "Agua profunda",
+        "Buceo",
+        "Grande"
+      ],
+      "filters": {
+        "keywords": [
+          "gris-azul",
+          "grande",
+          "agua_profunda",
+          "garza",
+          "azulada",
+          "enorme",
+          "zancuda",
+          "pescadora",
+          "pico_amarillo",
+          "pecho_rayado"
+        ],
+        "color": [
+          "gris",
+          "azul"
+        ],
+        "habitat": [
+          "agua",
+          "agua_profunda",
+          "humedales"
+        ],
+        "timeOfDay": [
+          "amanecer"
+        ],
+        "size": [
+          "muy_grande"
+        ],
+        "activity": [
+          "acuática"
+        ],
+        "status": [
+          "moderado"
+        ]
+      },
+      "quickId": "Gris-azul + Grande = Garza Azulada",
+      "doNotConfuseWith": "No confundir con Garza Blanca (distinto color)",
+      "photoUrl": "https://static.inaturalist.org/photos/3101697/large.jpg",
+      "eBirdNotes": "Más grande que Garza Blanca, agua profunda"
+    },
+    {
+      "id": 9,
+      "commonName": "Gavilán Pollero",
+      "scientificName": "Accipiter bicolor",
+      "emoji": "🦅",
+      "size": "Mediano (26-35cm)",
+      "sizeCategory": "mediano",
+      "colors": [
+        "Gris azulado macho",
+        "Vientre blanco barrado",
+        "Pardo hembra",
+        "Ojos naranja/rojo",
+        "Cola barrada"
+      ],
+      "dominantColor": "Gris",
+      "mainHabitat": "Entre árboles",
+      "bestTime": "Todo el día",
+      "timeCategory": "todo_dia",
+      "sound": "Silencioso",
+      "rarity": "Moderado",
+      "rarityLevel": 3,
+      "behavior": "Pequeño halcón volando rápido entre árboles",
+      "conservationStatus": "Estable",
+      "mainType": "Accipitridae",
+      "traits": [
+        "Cazador rápido",
+        "Ágil",
+        "Silencioso"
+      ],
+      "filters": {
+        "keywords": [
+          "rapaz",
+          "halcón",
+          "pequeño",
+          "rápido",
+          "ágil",
+          "cazador",
+          "depredador",
+          "gris",
+          "barrado",
+          "accipitrido"
+        ],
+        "color": [
+          "gris",
+          "pardo"
+        ],
+        "habitat": [
+          "árboles",
+          "bosque"
+        ],
+        "timeOfDay": [
+          "todo_dia"
+        ],
+        "size": [
+          "mediano"
+        ],
+        "activity": [
+          "cazador",
+          "volador"
+        ],
+        "status": [
+          "moderado"
+        ]
+      },
+      "quickId": "Pequeño halcón gris + rápido = Gavilán",
+      "doNotConfuseWith": "No confundir con colibríes azules",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/254463944/large.jpg",
+      "eBirdNotes": "Señal: otras aves huyen = está cerca"
+    },
+    {
+      "id": 10,
+      "commonName": "Águila Cangrejera",
+      "scientificName": "Harpyhaliaetus coronatus",
+      "emoji": "🦅",
+      "size": "Grande (59-64cm)",
+      "sizeCategory": "grande",
+      "colors": [
+        "Gris oscuro dorso",
+        "Blanco vientre",
+        "Cabeza con cresta",
+        "Patas amarillas",
+        "Barras grises"
+      ],
+      "dominantColor": "Gris",
+      "mainHabitat": "Sobrevolando agua",
+      "bestTime": "Mañanas",
+      "timeCategory": "manana",
+      "sound": "Chillidos bajos",
+      "rarity": "Rara",
+      "rarityLevel": 2,
+      "behavior": "Águila gris-blanca sobre humedales",
+      "conservationStatus": "Vulnerable",
+      "mainType": "Accipitridae",
+      "traits": [
+        "Cazadora acuática",
+        "Especialista cangrejos",
+        "Soberbia"
+      ],
+      "filters": {
+        "keywords": [
+          "águila",
+          "cangrejera",
+          "agua",
+          "humedales",
+          "rara",
+          "vulnerable",
+          "amenazada",
+          "grande",
+          "cazadora",
+          "especializada"
+        ],
+        "color": [
+          "gris",
+          "blanco"
+        ],
+        "habitat": [
+          "agua",
+          "humedales",
+          "sobrevolando"
+        ],
+        "timeOfDay": [
+          "manana"
+        ],
+        "size": [
+          "grande"
+        ],
+        "activity": [
+          "cazadora",
+          "volador"
+        ],
+        "status": [
+          "rara",
+          "vulnerable"
+        ]
+      },
+      "quickId": "Águila + Agua = Cangrejera",
+      "doNotConfuseWith": "No confundir con otras rapaces",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/85409050/large.jpeg",
+      "eBirdNotes": "Especializada en cangrejos, muy selectiva"
+    },
+    {
+      "id": 11,
+      "commonName": "Tororoí Colirrojo",
+      "scientificName": "Gymnopithys leucaspis",
+      "emoji": "🔴",
+      "size": "Pequeño (13-15cm)",
+      "sizeCategory": "pequeño",
+      "colors": [
+        "Negro muy oscuro dorso",
+        "Gris vientre",
+        "Cola roja brillante",
+        "Cara de colores vivos"
+      ],
+      "dominantColor": "Rojo",
+      "mainHabitat": "Suelo bosque",
+      "bestTime": "Madrugada/Mañana",
+      "timeCategory": "madrugada",
+      "sound": "Agudo",
+      "rarity": "Raro",
+      "rarityLevel": 2,
+      "behavior": "Pajarito oscuro con cola roja brillante en suelo",
+      "conservationStatus": "Estable",
+      "mainType": "Thamnophilidae",
+      "traits": [
+        "Suelo",
+        "Sigue hormigas",
+        "Diminuto"
+      ],
+      "filters": {
+        "keywords": [
+          "pequeño",
+          "rojo",
+          "cola_roja",
+          "suelo",
+          "oscuro",
+          "hormiguero",
+          "diminuto",
+          "raro",
+          "distintivo",
+          "comportamiento"
+        ],
+        "color": [
+          "rojo",
+          "negro"
+        ],
+        "habitat": [
+          "suelo",
+          "bosque"
+        ],
+        "timeOfDay": [
+          "madrugada",
+          "manana"
+        ],
+        "size": [
+          "pequeño"
+        ],
+        "activity": [
+          "terrestre"
+        ],
+        "status": [
+          "raro"
+        ]
+      },
+      "quickId": "Cola roja + pequeño = Tororoí",
+      "doNotConfuseWith": "No confundir con otros pajarillos rojos",
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60278431/large.jpg",
+      "eBirdNotes": "Difícil de ver, sigue hormigas en movimiento"
+    },
+    {
+      "id": 12,
+      "commonName": "Colibrí / Picaflor",
+      "scientificName": "Varios géneros/especies",
+      "emoji": "🌺",
+      "size": "Diminuto (7-13cm)",
+      "sizeCategory": "diminuto",
+      "colors": [
+        "Verde iridiscente típico",
+        "Pecho rojo/naranja/azul",
+        "Según la especie",
+        "Pico largo delgado"
+      ],
+      "dominantColor": "Verde",
+      "mainHabitat": "Flores",
+      "bestTime": "Mañana/Tarde",
+      "timeCategory": "manana_tarde",
+      "sound": "ZZZzzzzz (zumbido)",
+      "rarity": "Común",
+      "rarityLevel": 4,
+      "behavior": "Pajarito verde brillante flotando en flores",
+      "conservationStatus": "Estable",
+      "mainType": "Trochilidae",
+      "traits": [
+        "Vuelo posterior",
+        "Metabolismo alto",
+        "Flotador"
+      ],
+      "filters": {
+        "keywords": [
+          "colibrí",
+          "diminuto",
+          "verde",
+          "zumbador",
+          "flores",
+          "rápido",
+          "iridiscente",
+          "colorido",
+          "único",
+          "fascinante"
+        ],
+        "color": [
+          "verde",
+          "rojo",
+          "azul"
+        ],
+        "habitat": [
+          "flores"
+        ],
+        "timeOfDay": [
+          "manana",
+          "tarde"
+        ],
+        "size": [
+          "diminuto"
+        ],
+        "activity": [
+          "volador",
+          "nectarívoro"
+        ],
+        "status": [
+          "común",
+          "estable"
+        ]
+      },
+      "quickId": "Diminuto + zumbido = Colibrí",
+      "doNotConfuseWith": "No confundir con insectos",
+      "photoUrl": "https://static.inaturalist.org/photos/10962371/large.jpg",
+      "eBirdNotes": "Varias especies, todas fascinantes"
+    },
+    {
+      "id": 13,
+      "commonName": "Oropéndola / Lora",
+      "scientificName": "Psarocolius viridis o similar",
+      "emoji": "🪶",
+      "size": "Mediano-Grande (35-45cm)",
+      "sizeCategory": "mediano_grande",
+      "colors": [
+        "Dorado/amarillo",
+        "Negro en partes",
+        "Cabeza pequeña",
+        "Pico amarillo fuerte",
+        "Cola amarilla larga"
+      ],
+      "dominantColor": "Dorado",
+      "mainHabitat": "Árboles altos",
+      "bestTime": "Mañana temprana",
+      "timeCategory": "manana",
+      "sound": "¡Gluglu! Agua derramándose",
+      "rarity": "Bastante común",
+      "rarityLevel": 4,
+      "behavior": "Ave dorada muy colorida/ruidosa en grupo",
+      "conservationStatus": "Estable",
+      "mainType": "Icteridae",
+      "traits": [
+        "Constructor nidos colgantes",
+        "Ruidosa",
+        "Grupo"
+      ],
+      "filters": {
+        "keywords": [
+          "dorada",
+          "amarilla",
+          "oropéndola",
+          "ruidosa",
+          "nido_colgante",
+          "grupo",
+          "árboles_altos",
+          "colorida",
+          "característica",
+          "sonido_único"
+        ],
+        "color": [
+          "dorado",
+          "amarillo"
+        ],
+        "habitat": [
+          "árboles_altos",
+          "dosel"
+        ],
+        "timeOfDay": [
+          "manana"
+        ],
+        "size": [
+          "mediano",
+          "grande"
+        ],
+        "activity": [
+          "social",
+          "ruidoso"
+        ],
+        "status": [
+          "común",
+          "estable"
+        ]
+      },
+      "quickId": "Dorada ruidosa + nido colgante = Oropéndola",
+      "doNotConfuseWith": "No confundir con loros (aunque parecida)",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/The_genera_of_birds_%2819179931731%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "eBirdNotes": "Nidos colgantes muy característicos, muy ruidosa"
+    }
+  ],
+  "availableFilters": {
+    "size": [
+      "diminuto",
+      "pequeño",
+      "mediano_pequeño",
+      "mediano",
+      "mediano_grande",
+      "grande",
+      "muy_grande"
+    ],
+    "color": [
+      "blanco",
+      "negro",
+      "gris",
+      "pardo",
+      "marrón",
+      "azul",
+      "verde",
+      "rojo",
+      "amarillo",
+      "dorado",
+      "naranja"
+    ],
+    "habitat": [
+      "flores",
+      "agua",
+      "agua_poco_profunda",
+      "agua_profunda",
+      "humedales",
+      "bosque",
+      "bosque_denso",
+      "árboles",
+      "árboles_altos",
+      "dosel",
+      "bordes",
+      "arbustos",
+      "matorrales",
+      "suelo",
+      "cielo",
+      "sobrevolando"
+    ],
+    "timeOfDay": [
+      "madrugada",
+      "amanecer",
+      "manana",
+      "manana_tarde",
+      "tarde",
+      "amanecer_tarde",
+      "todo_dia"
+    ],
+    "rarity": [
+      "común",
+      "bastante_común",
+      "moderado",
+      "poco_común",
+      "raro"
+    ],
+    "activity": [
+      "terrestre",
+      "acuática",
+      "volador",
+      "cazador",
+      "pescadora",
+      "nectarívoro",
+      "social",
+      "solitario",
+      "ruidoso",
+      "silencioso",
+      "planeo"
+    ],
+    "conservationStatus": [
+      "estable",
+      "común",
+      "moderado",
+      "poco_común",
+      "vulnerable",
+      "amenazado",
+      "en_peligro",
+      "extinto"
+    ]
+  },
+  "statistics": {
+    "bySize": {
+      "diminuto": 1,
+      "pequeño": 4,
+      "mediano": 3,
+      "grande": 4,
+      "muy_grande": 1
+    },
+    "byHabitat": {
+      "agua": 4,
+      "árboles": 4,
+      "bosque": 3,
+      "terrestre": 2
+    },
+    "byTimeOfDay": {
+      "amanecer": 2,
+      "manana": 4,
+      "todo_dia": 4,
+      "tarde": 2
+    },
+    "byRarity": {
+      "común": 4,
+      "moderado": 4,
+      "poco_común": 3,
+      "raro": 2
+    }
+  },
+  "search": {
+    "instructions": "Utilizar este JSON para implementar búsqueda por:",
+    "examples": [
+      "Nombre común: 'Garza Blanca'",
+      "Nombre científico: 'Ardea alba'",
+      "Color: 'azul', 'blanco', 'verde'",
+      "Tamaño: 'grande', 'pequeño'",
+      "Hábitat: 'agua', 'árboles', 'bosque'",
+      "Horario: 'amanecer', 'mañana', 'todo_dia'",
+      "Características: 'ruidosa', 'rápida', 'elegante'",
+      "Palabras clave: cualquier término en el array 'palabrasClave'"
+    ]
+  }
+}

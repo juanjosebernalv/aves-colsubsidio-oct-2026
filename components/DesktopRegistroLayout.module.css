@@ -1,0 +1,27 @@
+.layout {
+  @apply flex min-h-screen bg-surface;
+}
+
+.mainContent {
+  @apply flex-1 pt-16;
+  margin-left: 18rem;
+}
+
+.contentWrapper {
+  @apply w-full px-6 py-8;
+}
+
+.splitPane {
+  @apply grid gap-6 mt-6;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1280px) {
+  .splitPane {
+    grid-template-columns: 2fr 1fr;
+  }
+  .splitPane > div:last-child {
+    @apply sticky;
+    top: 6rem;
+  }
+}

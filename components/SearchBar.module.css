@@ -1,0 +1,31 @@
+.wrapper {
+  @apply w-full px-4 py-3 bg-canvas;
+}
+
+.inputRow {
+  @apply flex items-center gap-2.5 px-3 py-2 bg-surface-elevated border border-tactical/30 rounded-lg h-12 min-h-12;
+}
+
+.searchIcon {
+  @apply text-muted flex-shrink-0;
+}
+
+.input {
+  @apply flex-1 bg-transparent border-0 text-sm text-on-surface placeholder-text-muted outline-none font-body;
+}
+
+.input::placeholder {
+  @apply text-muted;
+}
+
+.actions {
+  @apply flex items-center gap-2 flex-shrink-0;
+}
+
+.actionBtn {
+  @apply p-1.5 rounded text-secondary hover:bg-surface-hover transition-colors;
+}
+
+.actionBtnMuted {
+  @apply p-1.5 rounded text-muted hover:bg-surface-hover transition-colors;
+}

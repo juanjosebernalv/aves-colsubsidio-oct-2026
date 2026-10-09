@@ -1,0 +1,47 @@
+.header {
+  @apply px-4 py-3 bg-canvas flex items-center justify-between gap-3 border-t border-tactical/35;
+}
+
+.headerLeft {
+  @apply flex items-center gap-2;
+}
+
+.title {
+  @apply font-display text-headline-md text-on-surface font-semibold;
+}
+
+.countBadge {
+  @apply px-2 py-1 rounded-full bg-surface-elevated text-label-mono-sm text-secondary font-semibold;
+}
+
+.sort {
+  @apply flex items-center gap-1 text-label-mono-sm text-muted;
+}
+
+.sortLabel {
+  @apply uppercase font-semibold;
+}
+
+.sortIcon {
+  @apply text-muted;
+}
+
+.empty {
+  @apply w-full px-4 py-12 flex flex-col items-center justify-center text-center gap-3;
+}
+
+.emptyEmoji {
+  @apply block text-5xl;
+}
+
+.emptyText {
+  @apply font-display text-headline-md text-on-surface font-semibold;
+}
+
+.emptyHint {
+  @apply font-body text-body-md text-muted;
+}
+
+.list {
+  @apply w-full px-4 py-3 space-y-3 pb-8;
+}

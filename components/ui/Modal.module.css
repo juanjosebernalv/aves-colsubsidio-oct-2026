@@ -1,0 +1,27 @@
+.overlay {
+  @apply fixed inset-0 z-50 flex items-end justify-center animate-fadeIn;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.panel {
+  @apply bg-surface-elevated border border-tactical animate-slideUp w-full;
+  border-width: 1px;
+  border-radius: 0.75rem 0.75rem 0 0;
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 640px) {
+  .overlay {
+    @apply items-center p-4;
+  }
+
+  .panel {
+    border-radius: 0.75rem;
+  }
+
+  .sm { max-width: 24rem; }
+  .md { max-width: 28rem; }
+  .lg { max-width: 36rem; }
+}
