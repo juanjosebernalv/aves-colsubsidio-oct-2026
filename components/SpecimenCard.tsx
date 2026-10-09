@@ -1,10 +1,11 @@
 'use client'
 
 import { memo, useCallback, useState } from 'react'
-import { VolumeUp, Visibility, Close, Star, Straighten, GraphicEq } from '@mui/icons-material'
+import { VolumeUp, Visibility, Close, Star, Straighten, GraphicEq, Search } from '@mui/icons-material'
 import type { Bird } from '@/data/birds.types'
 import { COLOR_HEX, getDominantGradient, getStatusVariant, isEndemicBird } from '@/lib/birdColors'
 import { useBirdImage } from '@/hooks/useBirdImage'
+import ImageModal from './ImageModal'
 import styles from './SpecimenCard.module.css'
 
 interface SpecimenCardProps {
@@ -32,6 +33,7 @@ const WAVEFORM_HEIGHTS = [2, 4, 6, 3, 5, 7, 4, 2, 3, 5, 6, 4, 2, 5, 3, 1]
 
 export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCardProps) {
   const [isExpanded, setIsExpanded] = useState(true)
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false)
   const endemic = isEndemicBird(bird)
   const statusVariant = getStatusVariant(bird.conservationStatus, endemic)
   const [gradFrom, gradTo] = getDominantGradient(bird.dominantColor)
@@ -42,10 +44,17 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
   const _handleLog = useCallback(() => onLog(bird), [onLog, bird])
   const handleAudio = useCallback(() => onAudio(bird.commonName), [onAudio, bird.commonName])
   const handleToggleExpand = useCallback(() => setIsExpanded((prev) => !prev), [])
+  const handleOpenImageModal = useCallback(() => {
+    if (imageUrl) {
+      setIsImageModalOpen(true)
+    }
+  }, [imageUrl])
+  const handleCloseImageModal = useCallback(() => setIsImageModalOpen(false), [])
 
   if (isExpanded) {
     return (
-      <div className={styles.expandedOverlay}>
+      <>
+        <div className={styles.expandedOverlay}>
         <div className={styles.expandedCard}>
           <button
             className={styles.closeBtn}
@@ -61,8 +70,18 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
             style={{ background: `linear-gradient(160deg, ${gradFrom}, ${gradTo})` } as React.CSSProperties}
           >
             {imageUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={imageUrl} alt={bird.commonName} className={styles.expandedBirdImage} />
+              <div className={styles.expandedImageWrapper} onClick={handleOpenImageModal}>
+                {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
+                <img
+                  src={imageUrl}
+                  alt={bird.commonName}
+                  className={styles.expandedBirdImage}
+                  onClick={handleOpenImageModal}
+                />
+                <div className={styles.expandedImageOverlay}>
+                  <Search className={styles.zoomIcon} sx={{ fontSize: 48 }} aria-hidden="true" />
+                </div>
+              </div>
             ) : (
               <div className={styles.expandedEmojiDisplay} aria-hidden="true">{bird.emoji}</div>
             )}
@@ -83,8 +102,21 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
                 <h2 className={styles.expandedBirdName}>{bird.commonName}</h2>
                 <p className={styles.expandedBirdScientific}>{bird.scientificName}</p>
               </div>
-              <div className={styles.expandedConservationBadge}>
-                <span className={styles.expandedConservationText}>{bird.conservationStatus.toUpperCase()}</span>
+              <div className={styles.expandedHudActions}>
+                {imageUrl && (
+                  <button
+                    className={styles.zoomBtn}
+                    onClick={handleOpenImageModal}
+                    type="button"
+                    aria-label="Ver imagen con zoom"
+                  >
+                    <Visibility sx={{ fontSize: 18 }} aria-hidden="true" />
+                    <span>ZOOM</span>
+                  </button>
+                )}
+                <div className={styles.expandedConservationBadge}>
+                  <span className={styles.expandedConservationText}>{bird.conservationStatus.toUpperCase()}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -148,6 +180,15 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
           </div>
         </div>
       </div>
+        {imageUrl && (
+          <ImageModal
+            isOpen={isImageModalOpen}
+            imageUrl={imageUrl}
+            birdName={bird.commonName}
+            onClose={handleCloseImageModal}
+          />
+        )}
+      </>
     )
   }
 

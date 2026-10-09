@@ -147,8 +147,20 @@
   @apply relative w-full h-80 bg-gradient-to-br from-surface-container to-surface-elevated flex items-center justify-center flex-shrink-0;
 }
 
+.expandedImageWrapper {
+  @apply relative w-full h-full cursor-pointer;
+}
+
 .expandedBirdImage {
   @apply w-full h-full object-cover;
+}
+
+.expandedImageOverlay {
+  @apply absolute inset-0 bg-black/0 hover:bg-black/40 transition-colors flex items-center justify-center;
+}
+
+.zoomIcon {
+  @apply text-on-surface opacity-0 hover:opacity-100 transition-opacity;
 }
 
 .expandedEmojiDisplay {
@@ -186,7 +198,11 @@
 }
 
 .expandedHudBottom {
-  @apply absolute bottom-0 inset-x-0 flex items-start justify-between p-3 gap-2;
+  @apply absolute bottom-0 inset-x-0 flex items-end justify-between p-3 gap-2;
+}
+
+.expandedHudActions {
+  @apply flex items-center gap-2;
 }
 
 .expandedBirdName {
@@ -195,6 +211,10 @@
 
 .expandedBirdScientific {
   @apply font-body text-body-lg text-muted italic mt-1;
+}
+
+.zoomBtn {
+  @apply flex items-center gap-1.5 px-3 py-1.5 rounded border border-secondary bg-secondary/10 text-secondary font-semibold uppercase text-label-mono-sm hover:bg-secondary/20 transition-colors;
 }
 
 .expandedConservationBadge {
