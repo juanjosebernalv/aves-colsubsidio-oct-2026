@@ -107,6 +107,21 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
               </div>
             </div>
 
+            <div className={styles.expandedColorsSection}>
+              <h3 className={styles.expandedColorsSectionTitle}>COLORACIÓN</h3>
+              <div className={styles.expandedColorsList}>
+                {bird.colors.map((color) => (
+                  <div key={color} className={styles.expandedColorItem}>
+                    <span
+                      className={styles.expandedColorDot}
+                      style={{ backgroundColor: COLOR_HEX[color.toLowerCase()] ?? '#64748B' } as React.CSSProperties}
+                    />
+                    <span className={styles.expandedColorLabel}>{color}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div className={styles.expandedWaveformBox}>
               <div className={styles.expandedWaveformHeader}>
                 <div className={styles.expandedWaveformLeft}>
@@ -179,15 +194,17 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
             <span className={styles.habitat}>{bird.mainHabitat}</span>
           </div>
 
-          <div className={styles.colorsRow}>
-            {colorDots.map((color) => (
-              <span
-                key={color}
-                className={styles.colorDot}
-                style={{ backgroundColor: COLOR_HEX[color] ?? '#64748B' } as React.CSSProperties}
-                title={color}
-              />
-            ))}
+          <div className={styles.colorsSection}>
+            <div className={styles.colorsRow}>
+              {colorDots.map((color) => (
+                <span
+                  key={color}
+                  className={styles.colorDot}
+                  style={{ backgroundColor: COLOR_HEX[color] ?? '#64748B' } as React.CSSProperties}
+                  title={color}
+                />
+              ))}
+            </div>
             {traitLabel && <span className={styles.traitLabel}>{traitLabel.toUpperCase()}</span>}
           </div>
         </div>

@@ -82,16 +82,20 @@
   @apply text-muted uppercase truncate;
 }
 
-.colorsRow {
+.colorsSection {
   @apply flex items-center gap-1.5;
 }
 
+.colorsRow {
+  @apply flex items-center gap-1;
+}
+
 .colorDot {
-  @apply inline-block w-3 h-3 rounded-full border border-tactical/35;
+  @apply inline-block w-3.5 h-3.5 rounded-full border border-tactical/50 shadow-sm;
 }
 
 .traitLabel {
-  @apply px-2 py-0.5 rounded-full border border-tactical/35 text-label-mono-sm text-muted font-semibold;
+  @apply px-2 py-0.5 rounded-full border border-tactical/35 text-label-mono-sm text-muted font-semibold ml-1;
 }
 
 .description {
@@ -269,4 +273,28 @@
 
 .expandedAudioBtn {
   @apply w-full px-3 py-2.5 rounded bg-surface-elevated text-secondary font-mono text-label-mono-sm font-bold uppercase flex items-center justify-center gap-2 border border-tactical/50 hover:border-secondary/50 transition-colors;
+}
+
+.expandedColorsSection {
+  @apply space-y-2 px-2 py-3 bg-surface-dim rounded;
+}
+
+.expandedColorsSectionTitle {
+  @apply font-mono text-label-mono-sm text-muted font-bold uppercase;
+}
+
+.expandedColorsList {
+  @apply grid grid-cols-2 gap-2;
+}
+
+.expandedColorItem {
+  @apply flex items-center gap-2 px-2 py-1.5 bg-surface-obsidian rounded;
+}
+
+.expandedColorDot {
+  @apply inline-block w-4 h-4 rounded-full border border-tactical/50 flex-shrink-0 shadow-sm;
+}
+
+.expandedColorLabel {
+  @apply font-body text-body-sm text-on-surface capitalize;
 }
