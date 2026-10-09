@@ -51,15 +51,19 @@ export default memo(function CatalogTab({ birds, onLog }: CatalogTabProps) {
   return (
     <div className={styles.container}>
       <TelemetryBar totalBirds={totalBirds || birds.length} isOnline={isOnline} />
-      <SearchBar value={searchQuery} onChange={handleSearch} onToast={showToast} />
-      <FilterChips endemicOnly={endemicOnly} onToggleEndemic={handleToggleEndemic} onReset={handleReset} />
-      <SpeciesCatalog
-        birds={birds}
-        onLog={onLog}
-        onAudio={handleAudio}
-        searchQuery={searchQuery}
-        endemicOnly={endemicOnly}
-      />
+      <div className={styles.searchContainer}>
+        <SearchBar value={searchQuery} onChange={handleSearch} onToast={showToast} />
+        <FilterChips endemicOnly={endemicOnly} onToggleEndemic={handleToggleEndemic} onReset={handleReset} />
+      </div>
+      <div style={{ paddingTop: '200px' }} className="flex-1 overflow-y-auto w-full">
+        <SpeciesCatalog
+          birds={birds}
+          onLog={onLog}
+          onAudio={handleAudio}
+          searchQuery={searchQuery}
+          endemicOnly={endemicOnly}
+        />
+      </div>
 
       <div className={toastVisible ? styles.toastVisible : styles.toastHidden} role="status" aria-live="polite">
         <span className={styles.toastText}>{toastMessage}</span>

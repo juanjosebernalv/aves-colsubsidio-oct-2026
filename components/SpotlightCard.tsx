@@ -1,7 +1,7 @@
 'use client'
 
 import { memo, useCallback } from 'react'
-import { Star, GraphicEq, AssignmentTurnedIn, ArrowForward, Straighten } from '@mui/icons-material'
+import { Star, GraphicEq, Straighten } from '@mui/icons-material'
 import type { Bird } from '@/data/birds.types'
 import { getDominantGradient } from '@/lib/birdColors'
 import { useBirdImage } from '@/hooks/useBirdImage'
@@ -20,7 +20,7 @@ export default memo(function SpotlightCard({ bird, onLog }: SpotlightCardProps) 
   const [gradFrom, gradTo] = getDominantGradient(bird.dominantColor)
   const { imageUrl } = useBirdImage(bird.scientificName, bird.photoUrl)
 
-  const handleLog = useCallback(() => onLog(bird), [onLog, bird])
+  const _handleLog = useCallback(() => onLog(bird), [onLog, bird])
 
   return (
     <section className={styles.section}>

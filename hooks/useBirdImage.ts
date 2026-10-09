@@ -12,6 +12,12 @@ const REAL_IMAGE_PREFIXES = [
   'https://inaturalist-open-data.s3.amazonaws.com',
   'https://static.inaturalist.org',
   'https://upload.wikimedia.org',
+  'https://cdn.download.ams.birds.cornell.edu',
+  'https://www.serpar.gob.pe',
+  'http://avesdeperu.org',
+  'https://avesdeperu.org',
+  'https://i0.wp.com/birdscolombia.com',
+  'https://birdscolombia.com',
 ]
 
 function isRealImageUrl(url: string): boolean {

@@ -1,7 +1,7 @@
 'use client'
 
 import { memo, useCallback, useState } from 'react'
-import { VolumeUp, EditNote, Visibility, Close, Star, Straighten, GraphicEq } from '@mui/icons-material'
+import { VolumeUp, Visibility, Close, Star, Straighten, GraphicEq } from '@mui/icons-material'
 import type { Bird } from '@/data/birds.types'
 import { COLOR_HEX, getDominantGradient, getStatusVariant, isEndemicBird } from '@/lib/birdColors'
 import { useBirdImage } from '@/hooks/useBirdImage'
@@ -39,7 +39,7 @@ export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCard
   const traitLabel = bird.traits[0] ?? ''
   const { imageUrl } = useBirdImage(bird.scientificName, bird.photoUrl)
 
-  const handleLog = useCallback(() => onLog(bird), [onLog, bird])
+  const _handleLog = useCallback(() => onLog(bird), [onLog, bird])
   const handleAudio = useCallback(() => onAudio(bird.commonName), [onAudio, bird.commonName])
   const handleToggleExpand = useCallback(() => setIsExpanded((prev) => !prev), [])
 

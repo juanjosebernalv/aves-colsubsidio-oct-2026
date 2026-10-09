@@ -2,6 +2,10 @@
   @apply w-full h-full bg-canvas flex flex-col overflow-hidden;
 }
 
+.searchContainer {
+  @apply fixed top-0 left-0 right-0 z-30 bg-canvas border-b border-tactical/35;
+}
+
 .recordsTab {
   @apply flex-1 relative overflow-y-auto;
 }
