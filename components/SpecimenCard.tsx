@@ -31,7 +31,7 @@ const RARITY_STARS = ['', '⭐', '⭐⭐', '⭐⭐⭐', '⭐⭐⭐⭐', '⭐⭐�
 const WAVEFORM_HEIGHTS = [2, 4, 6, 3, 5, 7, 4, 2, 3, 5, 6, 4, 2, 5, 3, 1]
 
 export default memo(function SpecimenCard({ bird, onLog, onAudio }: SpecimenCardProps) {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(true)
   const endemic = isEndemicBird(bird)
   const statusVariant = getStatusVariant(bird.conservationStatus, endemic)
   const [gradFrom, gradTo] = getDominantGradient(bird.dominantColor)

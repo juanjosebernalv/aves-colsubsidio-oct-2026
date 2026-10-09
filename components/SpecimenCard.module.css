@@ -132,15 +132,15 @@
 
 /* Expanded view styles */
 .expandedOverlay {
-  @apply fixed inset-0 bg-canvas/95 z-50 flex items-end;
+  @apply w-full bg-canvas;
 }
 
 .expandedCard {
-  @apply w-full h-full max-h-screen bg-surface-obsidian flex flex-col overflow-y-auto rounded-t-2xl;
+  @apply w-full bg-surface-obsidian flex flex-col overflow-hidden rounded-lg border border-tactical/35 mx-0;
 }
 
 .closeBtn {
-  @apply absolute top-3 right-3 p-1.5 rounded-full bg-surface-dim text-muted hover:bg-surface-hover transition-colors z-20;
+  @apply absolute top-2 right-2 p-1.5 rounded-full bg-surface-elevated/80 text-muted hover:bg-surface-hover transition-colors z-10;
 }
 
 .expandedMediaBox {
@@ -208,7 +208,7 @@
 }
 
 .expandedBody {
-  @apply flex-1 px-4 py-4 space-y-4 overflow-y-auto pb-8;
+  @apply flex-1 px-4 py-4 space-y-4 overflow-y-auto pb-4;
 }
 
 .expandedDescription {
